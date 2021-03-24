@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - SpaceShip Music </title>
-    <link rel="stylesheet" href="../static/css/home_ss.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_ss.css') }}" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
@@ -19,7 +19,7 @@
 <script>
 $(function(){
 //   $("#nav-placeholder").load("../../templates/nav.html");
-  $("#nav-placeholder").load("nav.html");
+  $("#nav-placeholder").load("{{ url_for('templates, filename='nav.html') }}");
 });
 </script>
 <!--end of Navigation bar -->
@@ -112,7 +112,7 @@ $(function(){
 <script>
 $(function(){
 //   $("#nav-placeholder").load("../../templates/nav.html");
-  $("#footer-placeholder").load("footer.html");
+  $("#footer-placeholder").load("{{ url_for('templates, filename='nav.html') }}");
 });
 </script>
 <!-- Footer -->
