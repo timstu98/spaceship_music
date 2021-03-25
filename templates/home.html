@@ -1,29 +1,16 @@
-<!-- home.html -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - SpaceShip Music </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_ss.css') }}" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
+{% extends "constant.html" %}
 
-<!-- Navigation bar-->
-<div id="nav-placeholder">
+{% block title %}Home{% endblock %}
 
-</div>
 
-<script>
-$(function(){
-//   $("#nav-placeholder").load("../../templates/nav.html");
-  $("#nav-placeholder").load("{{ url_for('templates, filename='nav.html') }}");
-});
-</script>
-<!--end of Navigation bar -->
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home_ss.css') }}" />
 
+{% endblock %}
+
+
+{% block content %}
     <div class="landing_sec">
         <img src="../static/images/spaceship.jpg" alt="Spaceship image" />
         <div class="text"> <h2>Spaceship Music</h2></div>
@@ -104,19 +91,5 @@ $(function(){
       </div>
     </div>
 
-<!-- Footer-->
-<div id="footer-placeholder">
+    {% endblock %}
 
-</div>
-
-<script>
-$(function(){
-//   $("#nav-placeholder").load("../../templates/nav.html");
-  $("#footer-placeholder").load("{{ url_for('templates, filename='nav.html') }}");
-});
-</script>
-<!-- Footer -->
-
-
-  </body>
-</html>

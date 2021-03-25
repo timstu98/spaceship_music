@@ -1,28 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs - SpaceShip Music </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/blogs_ss.css') }}" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+{% extends "constant.html" %}
 
-<!-- Navigation bar-->
-<div id="nav-placeholder">
+{% block title %}Blogs{% endblock %}
 
-</div>
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/blogs_ss.css') }}" />
 
-<script>
-$(function(){
-//   $("#nav-placeholder").load("../../templates/nav.html");
-  $("#nav-placeholder").load("nav.html");
-});
-</script>
-<!--end of Navigation bar -->
+{% endblock %}
 
-<body>
+{% block content %}
 
 <div class="main_block">
 
@@ -58,24 +44,6 @@ $(function(){
         </div>
 
     </div>
+    </div>
 
-<!-- <div class="right_bar">
-    
-</div> -->
-
-</body>
-
-<!-- Footer-->
-<div id="footer-placeholder">
-
-</div>
-
-<script>
-$(function(){
-//   $("#nav-placeholder").load("../../templates/nav.html");
-  $("#footer-placeholder").load("footer.html");
-});
-</script>
-<!-- Footer -->
-
-</html>
+    {% endblock %}

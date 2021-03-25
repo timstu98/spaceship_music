@@ -50,7 +50,10 @@ body {
 footer {
   background-color: saddlebrown;
   height: 200px;
-  display: flex; }
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 .logo_footer {
   height: 100px;

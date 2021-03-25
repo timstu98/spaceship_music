@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - SpaceShip Music</title>
+    {% endblock %}
+</head>
+
+    <header>
+        <div class="top_nav flex_row">
+          <div class="logo">
+            <img
+              src="https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png"
+              alt="LOGO HERE"
+            />
+          </div>
+          <div class="navigation">
+            <!--have taken out flex_row -->
+            <a href="#home" class="active">Home</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#playlists">Playlists</a>
+            <a href="#about_us">About us</a>
+          </div>
+        </div>
+      </header>
+
+<body>
+  {% block content %}{% endblock %}
+</body>
+
+<footer>
+
+  <div class="logo_footer"> <img
+      src="https://www.logaster.com/blog/wp-content/uploads/2018/05/LogoMakr.png"
+      alt="LOGO HERE"
+    /> </div>
+
+  <div class="footer_right">
+  
+  <div class="socials">
+    <div class="social_button"><img src="../static/images/temp_social.jpeg" alt="social button"></div>
+    <div class="social_button"><img src="../static/images/temp_social.jpeg" alt="social button"></div>
+      <div class="social_button"><img src="../static/images/temp_social.jpeg" alt="social button"></div>
+        <div class="social_button"><img src="../static/images/temp_social.jpeg" alt="social button"></div>
+  </div>
+
+  <div class="signature">
+    <p> This site was designed by <b>Tim Stuart</b>.</p>
+  </div>
+</div>
+
+</footer>
+</html>
