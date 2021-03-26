@@ -80,40 +80,11 @@
     width: auto;
     height: auto; }
 
-.main_block {
-  max-width: 1200px;
-  min-width: 300px;
-  width: auto;
-  height: auto;
-  background-color: purple;
-  margin-left: auto;
-  margin-right: auto;
+.main {
   display: flex;
   flex-direction: column; }
 
-.article {
-  margin: 15px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+.db {
+  flex: 1; }
 
-.article_info {
-  background-color: greenyellow;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1300px; }
-  .article_info h1 {
-    margin-bottom: 15px; }
-
-.article_image {
-  background-color: red; }
-  .article_image img {
-    max-width: 100%;
-    height: auto; }
-
-.text {
-  margin: 5px 12px 10px 12px; }
-
-/*# sourceMappingURL=blogs_ss.css.map */
+/*# sourceMappingURL=db_ss.css.map */

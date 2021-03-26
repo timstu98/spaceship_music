@@ -1,0 +1,32 @@
+{% extends "constant.html" %}
+
+{% block title %}DataBase stuff{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/db_ss.css') }}" />
+
+{% endblock %}
+
+{% block content %}
+<div class='db'>
+    <h1>Songs by article id</h1>
+    <table>
+        {% for article in articles %}
+            <tr>
+                <td colspan="2">
+                    {{ article.title }}
+                </td>
+            </tr>
+            {% for song in songs_for_article[article] %}
+                <tr><td>---</td>
+                    <td>
+                        {{ song.name}}
+                    </td>
+                </tr>
+            {% endfor %}
+        {% endfor %}
+    </table>
+</div>
+
+    {% endblock %}
