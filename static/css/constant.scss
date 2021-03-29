@@ -6,6 +6,8 @@
   
   .body {
     background-color: rgb(0, 183, 255);
+    min-height:100vh;
+    position: relative;
   }
 
 
@@ -69,11 +71,12 @@
   display:flex;
   // justify-content: center;
   // position: absolute;
-  // bottom: 0;
+  bottom: 0;
   // width: 100%;
-  // left:0;
+  left:0;
   // margin-top:auto;
-width:100%
+width:100%;
+position:absolute;
 
 }
 

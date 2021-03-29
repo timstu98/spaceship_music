@@ -3,8 +3,12 @@
 .main {
 display:flex;
 flex-direction:column;
+p {
+    display:inline;
+}
 }
 
 .db {
 flex:1;
 }
+
